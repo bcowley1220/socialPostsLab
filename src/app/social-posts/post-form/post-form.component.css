@@ -18,12 +18,17 @@ label {
   margin: 0px 0px 10px 0px;
 }
 input {
-  width: 100%;
+  width: 90%;
   height: 60px;
   border-radius: 5px;
   margin: 0px 0px 20px 0px;
   border: none;
   padding: 5px;
+  transition: ease-in-out, width 0.35s ease-in-out;
+}
+
+input:focus {
+  width: 100%;
 }
 #thought {
   height: 300px;
