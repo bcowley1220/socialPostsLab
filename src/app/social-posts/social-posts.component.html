@@ -1,0 +1,43 @@
+<main>
+  <h1>My Thoughts</h1>
+  <button id="newThought" type="button" (click)="toggleForm()">
+    New Thought
+  </button>
+  <app-post-form
+    (addThought)="addThoughtHandler($event)"
+    *ngIf="showForm"
+    (togForm)="toggleForm($event)"
+    [shwForm]="showForm"
+    (submitHandler)="onSubmitHandler($event)"
+  ></app-post-form>
+
+  <section id="appPost">
+    <app-post
+      *ngFor="let post of posts; index as i"
+      [post]="post"
+      [postIndex]="i"
+      (deleteThought)="deleteThoughtHandler($event)"
+    ></app-post>
+  </section>
+
+  <!-- <app-book
+  *ngFor="let book of listOfBooks; index as i"
+  [book]="book"
+  [bookIndex]="i"
+  (onRemove)="onRemoveHandler($event)"
+  (onAdd)="onAddHandler($event)"
+> -->
+
+  <!-- <section>
+  <span (click)="toggleForm()">new though</span>
+  <div class="post">
+    <post*ngFOrm="let post of posts; index as i" [post]="post"[index]="i" (deleted)="onDelete($event)"></post>
+  </div>
+</section> -->
+
+  <!-- 
+(onAdd)="onAddHandler($event) -->
+  <!-- (togForm)="toggleForm($event)" -->
+  <!-- (submitted)="onSubmit($event)" -->
+  <!-- (submitted)="onSubmitHandler($event)" -->
+</main>
