@@ -27,6 +27,7 @@ app-post-form {
   font-family: "Dosis", sans-serif;
   margin: 0px 0px 20px 0px;
   font-size: 18px;
+  border: solid 1px black;
 }
 #appPost {
   border: solid 1px black;
