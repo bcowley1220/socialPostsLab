@@ -30,6 +30,7 @@ app-post-form {
   border: solid 1px black;
 }
 #appPost {
+  width: 82%;
   border: solid 1px black;
   border-radius: 5px;
   /* padding: 22px; */

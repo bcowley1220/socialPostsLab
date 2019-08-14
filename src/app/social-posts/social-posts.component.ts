@@ -41,7 +41,7 @@ export class SocialPostsComponent implements OnInit {
   // !Handlers
   addThoughtHandler(newThought) {
     // console.log("addThought is working");
-    this.posts.push(newThought);
+    this.posts.unshift(newThought);
   }
   deleteThoughtHandler(index) {
     // console.log("deleteThought is working");

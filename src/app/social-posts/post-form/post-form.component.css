@@ -18,7 +18,7 @@ label {
   margin: 0px 0px 10px 0px;
 }
 input {
-  width: 90%;
+  width: 80%;
   height: 60px;
   border-radius: 5px;
   margin: 0px 0px 20px 0px;
@@ -28,7 +28,7 @@ input {
 }
 
 input:focus {
-  width: 100%;
+  width: 90%;
 }
 #thought {
   height: 300px;
